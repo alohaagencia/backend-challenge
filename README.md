@@ -8,7 +8,7 @@ Esse teste é para conhecermos melhor o seu perfil como desenvolvedor, como voc�
 - As decisões que você fez para resolver o desafio.
 - Como você utiliza suas ferramentas.
 
-> Sinta-se a vontade para utilizar qualquer biblioteca ou framework.
+Sinta-se a vontade para utilizar qualquer biblioteca ou framework.
 
 ## Sobre o desafio
 
@@ -21,7 +21,7 @@ Deve ser desenvolvido uma simples lista de contatos (nomes e telefones).
 - Excluir contatos da lista.
 - Fazer logout.
 
-> Deve ser utilizado no mínimo HTML, CSS e PHP durante o densevolvimento.
+Deve ser utilizado no mínimo HTML, CSS, PHP e um banco de dados durante o densevolvimento.
 
 ## Como participar?
 

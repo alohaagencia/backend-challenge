@@ -1,0 +1,86 @@
+/*
+	BUTTONS
+	Estilo de Botões
+*/
+.buttons { font-size: 0; }
+.buttons.right { text-align: right; }
+.buttons.center { text-align: center; }
+
+.buttons .button:not(:last-of-type) { margin-right: 10px; }
+
+.button,
+a.button {
+	padding: 0 15px;
+	
+	height: 40px;
+	display: inline-block;
+	
+	color: #999;
+	text-decoration: none;
+	font: normal 14px/40px Tahoma;
+
+	border-radius: 2px;
+	background-color: #fff;
+	border: 1px #e0e0e0 solid;
+
+	cursor: pointer;
+}
+
+.button.small {
+	width: 30px;
+	height: 30px;
+
+	padding: 0;
+
+	text-align: center;
+	font: normal 14px/30px Tahoma;
+}
+
+.button:hover,
+a.button:hover,
+label.button:hover {
+	color: #555;
+	border-color: #d0d0d0;
+}
+
+.button.left { float: left; }
+.button.right { float: right; }
+.button.center {
+	display: table;
+	margin: 0 auto;
+}
+
+.button.primary {
+	color: #fff;
+	
+	border: none;	
+	background-color: #09c;
+}
+
+.button.primary:hover {
+	color: #fff;
+	background-color: #2980b9;
+}
+
+.button.warning {
+	color: #fff;
+	
+	border: none;	
+	background-color: #f39c12;
+}
+
+.button.danger {
+	color: #fff;
+	
+	border: none;	
+	background-color: #dd4b39;
+}
+
+.button::before {
+	margin-right: 5px;
+
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button.small::before { margin: 0; }

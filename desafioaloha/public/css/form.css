@@ -1,0 +1,11 @@
+.form-display{
+	display: inline-block;
+}
+
+.scroll{
+	overflow: scroll;
+}
+
+tbody{
+	overflow: scroll !important;
+ }

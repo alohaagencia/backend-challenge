@@ -1,0 +1,165 @@
+/*
+	LOGIN
+	Estilo da Página de Login
+*/
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: table;
+	background-color: #34495e;
+}
+
+.box {
+	font-size: 0;
+	text-align:  center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+form {
+	width: 250px;
+
+	text-align: left;
+
+	display: inline-block;
+	vertical-align: middle;
+
+	margin: 0 auto;
+
+	-webkit-transition: all ease-out .3s;
+	   -moz-transition: all ease-out .3s;
+	        transition: all ease-out .3s;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+form h3 {
+	display: block;
+	margin-bottom: 30px;
+	
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.login h3,
+.forgot-password h3 {
+	color: #fff;
+	font: normal 70px 'Lasting Love';
+}
+
+form h3 i {
+	margin-bottom: 10px;
+	display: block !important;
+
+	color: #34495e;
+	font-size: 100px !important;
+}
+
+form input {
+	width: 100%;
+	height: 50px;
+
+	display: block;
+	padding: 0 15px;
+	margin-bottom: 15px;
+
+	color: #fff;
+	font: 15px Tahoma;
+
+	border: none;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, .1);
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+form p {
+	font-size: 0;
+	text-align: right;
+}
+
+form label,
+form button {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+form label {
+	margin-right: 10px;
+
+	color: #fff;
+	font: 13px Tahoma;
+}
+
+form label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+form button {
+	height: 40px;
+	padding: 0 15px;
+
+	color: #fff;
+	font: bold 12px Calibri;
+	text-transform: uppercase;
+	
+	border: none;
+	border-radius: 3px;
+	background-color: #16a085;
+}
+
+form button:hover {
+	cursor: pointer;
+	background-color: #27ae60;
+}
+
+#login { display: none; }
+
+.login {
+	opacity: 0;
+	visibility: hidden;
+
+	margin-left: -250px;
+}
+
+#login:checked + .login {
+	opacity: 1;
+	visibility: visible;
+
+	margin-left: 0;
+}
+
+#login:checked ~ .forgot-password {
+	opacity: 0;
+	visibility: hidden;
+	margin-right: -250px;
+}
+
+.callout {
+	width: 250px !important;
+	margin: 20px auto;
+}
+
+/* FOOTER */
+footer {
+	left: 50%;
+	bottom: 25px;
+	position: absolute;
+
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	font-size: 14px;
+	color: rgba( 255, 255, 255, 0.5 );
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}

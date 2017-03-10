@@ -1,0 +1,31 @@
+/*
+    FONTS
+    Declarações e chamadas de fontes
+*/
+
+html,
+body {
+	color: #222;
+	font-size: 16px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+p { line-height: 1.7; }
+
+a:link, a:visited {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #3498db;
+	text-decoration: underline;
+}
+
+@font-face {
+	font-family: 'Lasting Love';
+	src: url("libs/lastinglove/lastinglove.eot");
+	src: url("libs/lastinglove/lastinglove.eot?#iefix") format("embedded-opentype"), url("libs/lastinglove/lastinglove.woff2") format("woff2"), url("libs/lastinglove/lastinglove.woff") format("woff"), url("libs/lastinglove/lastinglove.ttf") format("truetype"), url("libs/lastinglove/lastinglove.svg#Lasting Love") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

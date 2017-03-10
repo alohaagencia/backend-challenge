@@ -1,0 +1,261 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.4
+Created: August 2014
+License URI: http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#suporte {
+    display: block;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 45%;
+    left: -2px;
+    z-index: 9999999;
+    background: #fff;
+    padding-top: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+#text-suporte {
+    display: none;
+}
+
+#suporte:hover {
+    width: initial;
+    padding: 10px;
+    text-decoration: none;
+}
+
+    #suporte:hover #text-suporte {
+        display: inline;
+    }
+
+    #suporte:hover img {
+        display: none;
+    }
+
+#suporte img {
+    height: 70%;
+    margin: 0 auto;
+}
+
+.header-small .logo img {
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+.main-navigation {
+    margin-top: 20px;
+}
+
+#navbar-collapse-1 a:hover, #navbar-collapse-1 a:focus, #navbar-collapse-1 .active > a {
+    color: #eb1c24;
+}
+
+.breadcrumb li a, .breadcrumb li {
+    text-transform: uppercase;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.default-color {
+    color: #e84c3d;
+}
+
+.default-bg.alternative-bg {
+    background-color: #13AE74;
+    color: #ffffff;
+}
+
+.tp-caption.large {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.tp-caption.medium {
+    font-size: 30px;
+}
+
+.white-color {
+    color: #fff !important;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.no-bottom {
+    padding-bottom: 0;
+}
+/* DESCOMENTAR ESSA PARTE PARA INSERIR O BOTÃO DE BUSCA */
+/* .gsc-search-button{
+	position: relative;    
+	height: 30px;
+    margin-top: 7px;
+}
+.gsc-search-button:after{
+	content: "\f002";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    left: 45%;
+    top: 15px;
+} */
+.gsc-search-button {
+    display: none;
+}
+
+.tp-caption {
+    white-space: normal !important;
+}
+
+.parallax-bg-phone {
+    background: url("../images/uploads/parallax-phone.jpg") 50% 0px no-repeat;
+}
+
+    .parallax-bg-phone:after {
+        background-color: rgba(36, 36, 36, 0.60);
+    }
+
+.parallax-bg-3 {
+    background: url("../images/uploads/parallax-numeros.jpg") 50% 0px no-repeat;
+}
+
+    .parallax-bg-3:after {
+        background-color: transparent;
+    }
+
+.box-style-1:not(.team-member):hover i {
+    color: #6f0e12;
+}
+
+.box-style-3 .icon-container {
+    width: 70px;
+    height: 60px;
+    border: 0;
+}
+
+.box-style-3:hover .icon-container {
+    border: 0;
+}
+
+    .box-style-3:hover .icon-container img {
+        opacity: 0.8;
+    }
+
+.box-style-3 {
+    margin-top: 30px;
+}
+
+.icones-parallax {
+    width: 90%;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+    .icones-parallax.hover {
+        display: none;
+    }
+
+.box-style-1:hover .icones-parallax {
+    display: none;
+}
+
+.box-style-1:hover .hover {
+    display: block;
+}
+
+.detalhes img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.image-center {
+    margin: 0 auto;
+}
+
+.header-title {
+    min-height: 140px;
+}
+
+    .header-title .image-header img {
+        width: 100%;
+    }
+
+    .header-title #map-canvas {
+        margin-bottom: 55px;
+    }
+
+.space-top {
+    padding-top: 50px;
+}
+
+.titulosWGC {
+	font-size: 22px;
+	color: #343434;
+	font-weight: 500;
+}
+
+#modulos .col-md-4 {
+    margin-top: 20px;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+    padding: 0 !important;
+}
+
+@media (min-width:767px) {
+    .caracteristicas {
+        max-width: none;
+        margin-left: -20px;
+    }
+
+    .box-style-3 .icon-container {
+        margin-top: -15px;
+    }
+
+    .image-part {
+        width: 50%;
+    }
+
+    .clients2 img {
+        display: block;
+        width: 70%;
+        height: auto;
+    }
+
+    .clients3 img {
+        width: 90%;
+    }
+
+    .clients2 .client{
+        margin: 100px;
+		text-align: center;
+    }
+}

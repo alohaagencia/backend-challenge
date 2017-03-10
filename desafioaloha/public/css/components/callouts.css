@@ -1,0 +1,100 @@
+/*
+    CALLOUTS
+    Estilo de Callouts
+*/
+
+/* Callout */
+.callout {
+	position: relative;
+
+	padding: 1.25rem;
+
+	color: #000;
+
+	background: #fff;
+	border-left: .4375rem rgba(0, 0, 0, .1) solid;
+	box-shadow: 0 .0625rem .0625rem rgba(0, 0, 0, .1);
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.callout:not(.col) {
+	width: 100%;
+	display: block;
+}
+
+.callout:not(.col) + * { margin-top: 1.25rem; }
+
+/* Callout > Titulo */
+.callout .title {
+	width: 95%;
+	display: block;
+
+	color: inherit;
+	font-size: 1.17rem;
+	font-family: 'Segoe UI', Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.callout .title + .description { margin-top: .625rem; }
+
+.callout .title::before { margin-right: .625rem; }
+
+/* Callout > Descrição */
+.callout .description {
+	width: 90%;
+	display: block;
+	
+	color: inherit;
+	font-size: 1rem;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.callout .description b,
+.callout .description strong { font-family: 'Segoe UI', Tahoma, Verdana, Segoe, sans-serif; }
+
+.callout .description a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.callout .description a:hover { text-decoration: none; }
+
+/* Callout > Fechar */
+.callout .close {
+	top: 1.5625rem;
+	right: 1.25rem;
+	position: absolute;
+
+	font-size: 1rem;
+	text-decoration: none;
+	color: rgba(0, 0, 0, .2);
+	text-shadow: 0 .0625rem 0 rgba(255, 255, 255, .2);
+}
+
+.callout .close:hover { color: rgba(0, 0, 0, .3); }
+
+/* Callout > Danger */
+.callout.danger {
+	color: #fff;
+	background: #dd4b39;
+}
+
+/* Callout > Info */
+.callout.info {
+	color: #fff;
+	background: #00c0ef;
+}
+
+/* Callout > Warning */
+.callout.warning {
+	color: #fff;
+	background: #f39c12;
+}
+
+/* Callout > Success */
+.callout.success {
+	color: #fff;
+	background: #00a65a;
+}

@@ -1,0 +1,43 @@
+/*
+	RESET
+	CSS Padrão
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+
+	-webkit-word-wrap: break-word;
+	   -moz-word-wrap: break-word;
+	        word-wrap: break-word;
+}
+
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+a,
+img { border: none; }
+
+img { display: block; }
+
+ul,
+ol,
+menu { list-style-position: inside; }
+
+img,
+video,
+iframe { max-width: 100%; }
+
+input,
+button,
+select,
+textarea { outline: none; }
+
+input:required,
+button:required,
+select:required,
+textarea:required { box-shadow: none; }

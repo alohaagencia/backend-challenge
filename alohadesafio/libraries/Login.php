@@ -33,7 +33,7 @@ class Login
 
 	function __construct()
 		{
-		self::$config = config_load('Login');
+		self::$config = config_load('login');
 		$this->db = new Database();
 		}
 

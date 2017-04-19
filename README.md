@@ -7,3 +7,5 @@ rodar o comando "composer install"
 
 para rodar o server utilizei o wamp
 e para rodar a parte do front utilizei o "npm install http-server -g"
+
+tive problemas com a parte de sessao e implementar algumas partes de requisição

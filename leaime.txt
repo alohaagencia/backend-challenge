@@ -1,0 +1,22 @@
+sistema criado em conceito rest, com um front-en e um back-end;
+
+componente front-end foi desenvolvido com php puro com base em arquitetura mvc, mas não foi usado nenhum famework;
+componente back-end foi desenvolvido com frame php slim e eloquente para persistencia de dados;
+
+instalação:
+colocar no mesmo diretorio os sitemas /agenda e /agendabe;
+executar o arquivo querie.sql;
+rodar o composer do componente agendabe;
+
+
+database
+
+obs.: a base foi criada em um banco mysql, não fiz o teste mas acredito que se rodar esse arquivo sql em outro banco funcionara,
+mas para isso teria que mudar os drivers da conexão especificada no path abaixo. 
+
+hoje a conexão está sendo feita com o usuario root e senha vazia;
+
+caso precise alterar alguma configuração de banco ela se encontra no componente agendabe.
+dir = '/agendabe/app/config/database.php'
+
+

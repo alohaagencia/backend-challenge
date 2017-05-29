@@ -1,0 +1,72 @@
+body{margin: 0; padding: 0; background: #EBEBEB}
+a{cursor: pointer; text-decoration: none}
+a:hover{cursor: pointer; text-decoration: underline;}
+.left{float: left}
+.right{float: right;}
+.central{margin: 0 auto}
+#resolution{width: 1024px;}
+#login{width: 470px; border: 1px solid #000; padding: 20px;}
+#register{width: 470px; border: 1px solid #000; padding: 20px;}
+.action{width: 200px}
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+#response{margin-bottom: 10px; border: 1px solid #000; padding: 15px 0px 15px 65px; display: none}
+#response a{font-weight: bolder; font-size: 20px; margin-right: 10px; }
+button{cursor: pointer;}
+#list table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+#list a {color:blue;}
+.number{width: 300px}
+#form-contato{border: 1px solid #000; padding: 0 15px 15px 15px; margin-bottom: 25px;}
+#save-contato input{width: 455px;}
+#update-contato input{width: 448px;}
+#both{clear: both;}
+.none{display: none}
+
+.error {
+    background: url('../img/error.png') no-repeat #FBE3E4 5px 5px;
+    border-color: #FBC2C4;
+    display: block !important;
+    background-position: 2%;
+    color: #D12F19;
+}
+
+.success {
+    background: url('../img/success.png') no-repeat #E6EFC2 5px 5px;
+    border-color: #C6D880;
+    display: block !important;
+    background-position: 2%;
+    color: #529214;
+}
+
+#button {
+    background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    border: 1px solid #CCCCCE;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
+               0 2px 7px rgba(0, 0, 0, 0.2);
+    color: #616165;
+    display: block;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow:1px 1px 0 #FFF;
+    padding: 0 5px;
+}

@@ -1,0 +1,83 @@
+<?php
+$adjacentes = 2;
+$url = '';
+if (isset($params) && is_array($params)) {
+  foreach ($params as $param => $value) {
+    if ($param != '_url' && $param != 'page') {
+      if ($value != null && $value != '') {
+        if (is_array($value)) {
+
+        } else {
+          $url .= '&' . $param . '=' . $value;
+        }
+      }
+    }
+  }
+}
+?>
+<ul class="pagination pagination-sm hidden-print pull-right" style="margin:0 auto;">
+  <?php if ($paginator->current > 1): ?>
+    <li><a href="?page=<?php echo ($paginator->current - 1); ?><?php echo $url; ?>">Anterior</a></li>
+  <?php endif; ?>
+
+  <?php if ($paginator->last <= 5): ?>
+
+    <?php for ($i = 1; $i < $paginator->last + 1; $i++): ?>
+      <?php if ($i == $paginator->current) : ?>
+        <li class="active"><a href="?page=<?php echo $i; ?><?php echo $url; ?>" ><?php echo $i; ?></a></li>
+      <?php else: ?>
+        <li><a href="?page=<?php echo $i; ?><?php echo $url; ?>" ><?php echo $i; ?></a></li>
+      <?php endif; ?>
+    <?php endfor; ?>
+
+  <?php elseif ($paginator->last > 5): ?>
+
+    <?php if ($paginator->current < 1 + (2 * $adjacentes)): ?>
+
+      <?php for ($i = 1; $i < 2 + (2 * $adjacentes); $i++): ?>
+        <?php if ($i == $paginator->current): ?>
+          <li class="active"><a href="#" ><?php echo $i; ?></a></li>
+        <?php else: ?>
+          <li><a href="?page=<?php echo $i; ?><?php echo $url; ?>" ><?php echo $i; ?></a></li>
+        <?php endif; ?>
+      <?php endfor; ?>
+      <li class="active"><a href="#">...</a></li>
+      <li><a href="?page=<?php echo ($paginator->last - 1); ?><?php echo $url; ?>" ><?php echo ($paginator->last - 1); ?></a></li>
+      <li><a href="?page=<?php echo $paginator->last; ?><?php echo $url; ?>" ><?php echo $paginator->last; ?></a></li>
+
+    <?php elseif ($paginator->current > (2 * $adjacentes) && $paginator->current < $paginator->last - 3): ?>
+
+      <li><a href="?page=1<?php echo $url; ?>" >1</a></li>
+      <li><a href="?page=2<?php echo $url; ?>" >2</a></li>
+      <li class="active"><a href="#">...</a></li>
+      <?php for ($i = $paginator->current - $adjacentes; $i <= $paginator->current + $adjacentes; $i++): ?>
+        <?php if ($i == $paginator->current): ?>
+          <li class="active"><a href="#" ><?php echo $i; ?></a></li>
+        <?php else: ?>
+          <li><a href="?page=<?php echo $i; ?><?php echo $url; ?>" ><?php echo $i; ?></a></li>
+        <?php endif; ?>
+      <?php endfor; ?>
+      <li class="active"><a href="#">...</a></li>
+      <li><a href="?page=<?php echo ($paginator->last - 1); ?><?php echo $url; ?>" ><?php echo ($paginator->last - 1); ?></a></li>
+      <li><a href="?page=<?php echo $paginator->last; ?><?php echo $url; ?>" ><?php echo $paginator->last; ?></a></li>
+
+    <?php else: ?>
+
+      <li><a href="?page=1<?php echo $url; ?>" >1</a></li>
+      <li><a href="?page=2<?php echo $url; ?>" >2</a></li>
+      <li class="active"><a href="#">...</a></li>
+      <?php for ($i = $paginator->last - (4 + (2*null)); $i <= $paginator->last; $i++): ?>
+        <?php if ($i == $paginator->current): ?>
+          <li class="active"><a href="#" ><?php echo $i; ?></a></li>
+        <?php else: ?>
+          <li><a href="?page=<?php echo $i; ?><?php echo $url; ?>"><?php echo $i; ?></a></li>
+        <?php endif; ?>
+      <?php endfor; ?>
+
+    <?php endif; ?>
+
+  <?php endif; ?>
+  <?php if (($paginator->current + 1) <= $paginator->last && $paginator->last > 2): ?>
+    <li><a href="?page=<?php echo ($paginator->current + 1) . $url; ?>" >Próxima</a></li>
+  <?php endif; ?>
+</ul>

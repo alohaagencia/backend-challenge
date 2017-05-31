@@ -1,0 +1,13 @@
+<h4 style="margin: -10px 0px 15px 0px; color: white;">Confirmação de Conta.</h4>
+<form action="/auth/confirmaccount/<?php echo $token; ?>" method="post" id="formConfirmAccount" class="formAction formulario" novalidate>
+  <div class="form-linha">
+    <input type="email" id="email" name="email" placeholder="Email" data-required="required" value="<?php echo $systemUser->getEmail(); ?>" readonly />
+  </div>
+  <div class="form-linha">
+    <input type="text" id="name" name="name" placeholder="Nome" data-required="required"/>
+  </div>
+  <div class="form-linha">
+    <input type="password" id="password" name="password" placeholder="Senha" data-required="required"/>
+  </div>
+  <button class="btn-entrar" type="submit">Atualizar e Entrar</button>
+</form>

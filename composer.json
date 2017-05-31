@@ -1,0 +1,9 @@
+{
+  "require": {
+    "phalcon/incubator": "v1.3.5",
+    "phpmailer/phpmailer": "dev-master"
+  },
+  "config": {
+    "vendor-dir": "apps/vendor"
+  }
+}

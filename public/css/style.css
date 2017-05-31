@@ -1,0 +1,20 @@
+.box-header.filter{
+  height: 45px;
+}
+.box-filter input{
+  width: 100% !important;
+}
+.box-buttons{
+  margin: -5px;
+  float: left;
+}
+.btn-text i{
+  margin-right: 10px;
+}
+.table-contacts td{
+  padding: 10px 8px !important;
+  vertical-align: middle !important;
+}
+.table-contacts td input{
+  margin: -5px 0;
+}

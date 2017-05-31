@@ -1,0 +1,32 @@
+<div class="login-box">
+  <div class="login-logo">
+    <a href="/"><b>Agenda</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Preencha seus dados para entrar</p>
+    <?php
+      $this->flashSession->output();
+    ?>
+    <form  method="post" action="/auth">
+      <?php echo $form->renderAllDecorated() ?>
+      <div class="row">
+        <div class="col-xs-4 col-md-push-8">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Entrar</button>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-8 col-md-pull-4" style="margin-top: 5px">
+          <a href="/auth/forgot">Esqueceu sua senha?</a><br>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <div class="social-auth-links text-center">
+      <p>- OU -</p>
+      <a href="/auth/register" class="btn btn-block btn-primary btn-flat">Cadastre-se</a>
+    </div>
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->

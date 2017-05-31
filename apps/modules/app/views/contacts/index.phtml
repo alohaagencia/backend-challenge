@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="box">
+      <div class="box-header filter">
+        <div class="box-buttons">
+          <a href="/contacts/register" class="btn btn-flat btn-text btn-success"><i class="fa fa-plus"></i>Novo</a>
+        </div>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body table-responsive">
+        <table class="table table-striped table-hover table-contacts">
+          <tr>
+            <th>Cod</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Criado</th>
+            <th class="col-sm-2"></th>
+          </tr>
+          <?php foreach ($paginator->items as $u): ?>
+            <tr>
+              <td><?php echo $u['id'] ?></td>
+              <td><?php echo $u['name'] ?></td>
+              <td>
+                <input type="text" readonly="" class="form-control mask-phone" value="<?php echo $u['number'] ?>">
+              </td>
+              <td><?php echo \DateTime::createFromFormat('Y-m-d H:i:s',$u['created_at'])->format('d/m/Y H:i:s') ?></td>
+              <td>
+                <a href="/contacts/view/<?php echo $u['id'] ?>" class="btn btn-flat btn-primary">
+                  <i class="fa fa-search"></i>
+                </a>
+                <a href="/contacts/register/<?php echo $u['id'] ?>" class="btn btn-flat btn-warning">
+                  <i class="fa fa-edit"></i>
+                </a>
+                <a data-toggle="modal" data-target="#modal-confirm" data-href="/contacts/delete/<?php echo $u['id'] ?>" data-message="Deseja realmente excluir este contato?" class="btn btn-flat btn-danger">
+                  <i class="fa fa-trash"></i>
+                </a>
+              </td>
+            </tr>
+          <?php endforeach;?>
+        </table>
+      </div>
+      <div class="box-footer">
+        Registros: <?php echo $paginator->total_items ?>
+        <?php echo $this->partial("renders/paginator"); ?>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+</div>

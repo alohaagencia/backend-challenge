@@ -1,0 +1,14 @@
+<?php if (isset($breadcrumb) && count($breadcrumb) > 0): ?>
+  <ol class="breadcrumb">
+    <li>
+      <a href="/"><i class="fa fa-dashboard"></i></a>
+    </li>
+    <?php foreach ($breadcrumb as $item): ?>
+      <?php if (isset($item['link']) && $item['link']): ?>  
+        <li><a href="<?php echo $item['link']; ?>"><?php echo $item['label']; ?></a></li>
+      <?php else: ?>
+        <li class="active"><?php echo $item['label']; ?></li>        
+        <?php endif; ?>
+      <?php endforeach; ?>
+  </ol>
+<?php endif; ?>

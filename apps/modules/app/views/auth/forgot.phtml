@@ -1,0 +1,25 @@
+<div class="login-box">
+  <div class="login-logo">
+    <a href="/"><b>Agenda</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Preencha seu email para recupearar a senha</p>
+    <?php
+      $this->flashSession->output();
+    ?>
+    <form  method="post" action="/auth/forgot">
+      <?php echo $form->renderAllDecorated() ?>
+      <div class="row">
+        <div class="col-xs-4">
+          <a href="/auth" class="btn btn-danger btn-block btn-flat">Cancelar</a>
+        </div>
+        <div class="col-xs-4 col-md-push-4">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->

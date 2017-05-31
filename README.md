@@ -32,3 +32,5 @@ Deve ser utilizado no mínimo HTML, CSS, PHP e um banco de dados durante o dense
 - Faça uma PR para este repositório com instruções claras de como executar seu código.
 
 Sua PR será avaliada e lhe daremos um feedback o mais rápido possível.
+
+

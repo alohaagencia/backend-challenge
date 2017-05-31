@@ -33,10 +33,4 @@ Deve ser utilizado no mínimo HTML, CSS, PHP e um banco de dados durante o dense
 
 Sua PR será avaliada e lhe daremos um feedback o mais rápido possível.
 
-## Instalação
-
- - O sistema foi desenvolvido utilizando o framework Phalcon, para instalar basta seguir os passos do link https://docs.phalconphp.com/en/3.0.0/reference/install.html
- - O banco de dados utilizado foi o mysql 5.7 e o sql com a estrutura esta dentro da pasta db do projeto com o nome agenda.sql
- - Coloquei o mesmo online em https://agenda.sotti.com.br
-
 

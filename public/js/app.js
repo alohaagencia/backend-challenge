@@ -10,7 +10,7 @@ $(document).ready(function () {
   })();
 
   $(".mask-phone").inputmask({
-    mask: ["(99) 9999-9999", "(99) 99999-9999"],
+    mask: ["(99) 9999-9999","(99) 99999-9999"],
     keepStatic: true
   });
 
